@@ -166,6 +166,74 @@ html, body {
     flex-shrink: 0;
 }
 
+/* Address Section */
+.address-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #ffffff;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.address svg {
+    flex-shrink: 0;
+}
+
+.directions-btns {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.directions-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.directions-btn.google-maps {
+    background-color: #4285F4;
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(66, 133, 244, 0.4);
+}
+
+.directions-btn.google-maps:hover {
+    background-color: #3367D6;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(66, 133, 244, 0.5);
+}
+
+.directions-btn.waze {
+    background-color: #33CCFF;
+    color: #1D1E40;
+    box-shadow: 0 4px 15px rgba(51, 204, 255, 0.4);
+}
+
+.directions-btn.waze:hover {
+    background-color: #00BFFF;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(51, 204, 255, 0.5);
+}
+
+.directions-btn svg {
+    flex-shrink: 0;
+}
+
 /* Responsive */
 @media (max-width: 600px) {
     .logo {
@@ -184,6 +252,20 @@ html, body {
 
     .contact-info {
         margin-bottom: 30px;
+    }
+
+    .address {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+
+    .directions-btn {
+        padding: 10px 20px;
+        font-size: 0.85rem;
+    }
+
+    .address-section {
+        margin-top: 30px;
     }
 }
 
